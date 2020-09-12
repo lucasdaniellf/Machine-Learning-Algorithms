@@ -12,11 +12,8 @@ Original file is located at
 import numpy as np
 import csv
 from sklearn.model_selection import train_test_split
-from google.colab import files
 
-uploaded = files.upload()
-
-with open('/content/Pixels.csv') as csv_file:
+with open('Pixels.csv') as csv_file:
   csv_reader = csv.reader(csv_file)
   matrix = []
   for line in csv_reader:
@@ -27,7 +24,7 @@ X_1[0, 125:140]
 
 X_1.shape
 
-with open('/content/Target.csv') as csv_file:
+with open('Target.csv') as csv_file:
   csv_reader = csv.reader(csv_file)
   target = []
   for line in csv_reader:
